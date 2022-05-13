@@ -8,14 +8,13 @@
 }
 
 .child{
-    background-color: #ff040417;
+    background-color: #ff040408;
     width: 30%;
     align-content: center;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     padding: 20px;
-
 }
 
 .child input{

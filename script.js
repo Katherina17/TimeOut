@@ -7,9 +7,11 @@ simpleInput.addEventListener('input', getSimpleValue);
 sliceInput.addEventListener('input', getSliceValue);
 
 function getTimeOutValue(element){
-    if(element.target.value == 'Привет'){
-        console.log('Привет');
-    }  
+    let newText = element.target.value;
+    timeOutInput.textContent = newText;
+    setTimeout(() => {
+        if(newText == timeOutInput.textContent) console.log(newText);
+    }, 1000)
 }
 
 function getSimpleValue(element) {
